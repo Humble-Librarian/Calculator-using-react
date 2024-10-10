@@ -1,27 +1,34 @@
 .calculator {
-    background-color: black;
-    color: white;
-    padding: 20px;
-    border-radius: 10px;
-  }
-  
-  .display {
-    background-color: gray;
-    padding: 10px;
-    border-radius: 10px;
-    margin-bottom: 10px;
-  }
-  
-  .button {
-    background-color: blue;
-    color: white;
-    padding: 10px;
-    border-radius: 10px;
-    margin: 5px;
-  }
-  
-  .buttonContainer {
-    display: grid;
-    grid-template-columns: repeat(4, 1fr);
-    gap: 6px;
-  }
+  background-color: black; /* Sets the background color of the calculator */
+  color: white; /* Sets the text color to white for better contrast */
+  padding: 20px; /* Adds padding around the calculator */
+  border-radius: 10px; /* Rounds the corners of the calculator */
+}
+
+.display {
+  background-color: gray; /* Sets the background color of the display area */
+  padding: 10px; /* Adds padding within the display */
+  border-radius: 10px; /* Rounds the corners of the display */
+  margin-bottom: 10px; /* Adds space below the display */
+}
+
+.button {
+  background-color: blue; /* Sets the background color of buttons */
+  color: white; /* Sets the text color of buttons to white */
+  padding: 10px; /* Adds padding within buttons */
+  border-radius: 10px; /* Rounds the corners of buttons */
+  margin: 5px; /* Adds space around each button */
+  cursor: pointer; /* Changes the cursor to a pointer on hover */
+  transition: background-color 0.3s; /* Smooth transition for background color change */
+}
+
+/* Adds a hover effect to buttons for better interactivity */
+.button:hover {
+  background-color: darkblue; /* Darkens the button color on hover */
+}
+
+.buttonContainer {
+  display: grid; /* Uses grid layout for arranging buttons */
+  grid-template-columns: repeat(4, 1fr); /* Creates 4 equal columns */
+  gap: 6px; /* Adds space between buttons */
+}
